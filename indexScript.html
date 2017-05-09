@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<! Trang Le, Memory Game.>
+
 <head>
 	<title>Memory Card Game</title>
 
@@ -29,10 +29,20 @@
 	
 	<div id="game-board" class="board clearfix"></div>
 
+	<button onclick="resetGame()"> Reset Game</button>
 
-	<button id="resetButton"> Reset Game</button>
+<script>
 
-	
+	function resetGame() {
+	 		
+	 	cardsInPlay = []; //Reset/empty cardsInPlay array.	
+
+	 	for (var i = 0; i < 4; i++) {
+		document.getElementsByTagName('img')[i].setAttribute('src', 'images/back.png');
+		}
+	 }
+
+	 </script>
 
 </main>
 
